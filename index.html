@@ -1,46 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LightPay - System-Wide Web3 for Mac</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; }
-        header { text-align: center; border-bottom: 1px solid #eee; padding-bottom: 40px; margin-bottom: 40px; }
-        h1 { color: #000; margin-bottom: 10px; }
-        .btn { display: inline-block; background: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 6px; margin: 5px; font-weight: bold; }
-        footer { margin-top: 60px; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.9em; text-align: center; }
-        .links a { margin: 0 10px; color: #666; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            max-width: 750px;
+            margin: auto;
+            color: #d1d5db;
+            font-size: 1.05rem;
+        }
+
+        .buttons {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 28px;
+            margin: 8px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #ffd700;
+            color: #000;
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        section {
+            margin-top: 40px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.07);
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+        }
+
+        .card h3 {
+            color: #ffd700;
+            margin-bottom: 12px;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .links a {
+            margin: 0 12px;
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            text-decoration: underline;
+        }
+
+        .copyright {
+            margin-top: 15px;
+            color: #d1d5db;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.3rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>LightPay</h1>
-        <p><strong>System-Wide Web3 for Your Mac</strong></p>
-        <p>The secure gateway between every application on your Mac and the decentralized web.</p>
-        <a href="#" class="btn">Download on Mac App Store</a>
-        <a href="https://github.com/floating/frame" class="btn" style="background:#444;">View on GitHub</a>
-    </header>
+    <div class="container">
 
-    <section>
-        <h2>Web3 Without the Friction</h2>
-        <p>Browser extensions trap your Web3 access inside a single tab. LightPay frees it. Sitting quietly in your menu bar, LightPay gives every browser, terminal, and native application on your Mac a single trusted Web3 surface.</p>
-        
-        <h2>Built for Self-Custody</h2>
-        <ul>
-            <li><strong>Your Keys Never Leave Your Mac:</strong> Data is encrypted locally. No cloud. No middleman.</li>
-            <li><strong>Hardware Wallet Support:</strong> Ledger, Trezor, and Lattice1 support built-in.</li>
-            <li><strong>No Hidden Fees:</strong> We never take a cut. Pay only network gas.</li>
-        </ul>
-    </section>
+        <header>
+            <div class="logo">LightPay</div>
+            <p class="tagline"><strong>System-Wide Web3 for Your Mac</strong></p>
+            <p class="description">
+                The secure gateway between every application on your Mac and the decentralized web.
+                Fast, private, and fully under your control.
+            </p>
 
-    <footer>
-        <div class="links">
-            <a href="privacy.html">Privacy Policy</a>
-            <a href="support.html">Support</a>
-            <a href="https://lightpay.sh">Official Website</a>
-        </div>
-        <p>© 2026 Frame Labs. LightPay is open source under GPL-3.0.</p>
-    </footer>
+            <div class="buttons">
+                <a href="#" class="btn btn-primary">Download on Mac App Store</a>
+                <a href="https://github.com/floating/frame" class="btn btn-secondary">View on GitHub</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Why Choose LightPay?</h2>
+
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Web3 Without Limits</h3>
+                    <p>
+                        Browser extensions trap your access inside one tab. 
+                        LightPay frees it—connecting every browser, terminal, and native app.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Self-Custody First</h3>
+                    <p>
+                        Your private keys stay encrypted on your Mac. 
+                        No cloud sync, no middleman, no compromises.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Hardware Wallet Ready</h3>
+                    <p>
+                        Supports Ledger, Trezor, and Lattice1 directly 
+                        for enterprise-grade wallet security.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Transparent Pricing</h3>
+                    <p>
+                        No hidden fees. No platform cuts. 
+                        Pay only blockchain network gas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="links">
+                <a href="https://vikasdevapp.github.io/lightpay/privacy.html">Privacy Policy</a>
+                <a href="https://vikasdevapp.github.io/lightpay/support.html">Support</a>
+                <a href="https://lightpay.sh">Official Website</a>
+            </div>
+
+            <p class="copyright">
+                © 2026 LightPay Labs. Open source under GPL-3.0.
+            </p>
+        </footer>
+
+    </div>
 </body>
 </html>
