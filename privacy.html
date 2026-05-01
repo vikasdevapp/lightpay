@@ -1,28 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy Policy - LightPay</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #333; }
-        h1, h2 { color: #000; }
-        .date { color: #666; font-style: italic; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            background: linear-gradient(135deg, #0d1b2a, #1b263b);
+            color: #f5f5f5;
+            min-height: 100vh;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(12px);
+            border-radius: 18px;
+            padding: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #ffd700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+            color: #ffd700;
+        }
+
+        .date {
+            color: #d1d5db;
+            font-style: italic;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            margin-bottom: 30px;
+            color: #e5e7eb;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-left: 5px solid #ffd700;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 12px;
+            font-size: 1.4rem;
+        }
+
+        p {
+            color: #e5e7eb;
+        }
+
+        code {
+            background: rgba(0,0,0,0.3);
+            padding: 3px 6px;
+            border-radius: 6px;
+            color: #ffd700;
+        }
+
+        .contact {
+            margin-top: 25px;
+            padding: 18px;
+            border-radius: 12px;
+            background: rgba(255, 215, 0, 0.12);
+        }
+
+        .contact a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 22px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <a href="index.html">← Back to Home</a>
-    <h1>LightPay Privacy Policy</h1>
-    <p class="date">Effective Date: May 1, 2026</p>
-    <p>LightPay is a self-custodial Web3 wallet application that runs locally on your Mac. We believe your private keys and data should remain solely on your device.</p>
-    
-    <h2>1. Information We Do Not Collect</h2>
-    <p>We do not collect, store, or transmit your name, email, private keys, seed phrases, or transaction history. We do not sell or share user data.</p>
-    
-    <h2>2. Local Storage</h2>
-    <p>All wallet data and settings are stored encrypted on your Mac at <code>~/Library/Application Support/LightPay</code>.</p>
-    
-    <h2>3. Contact</h2>
-    <p>Email: privacy@lightpay.sh</p>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+
+        <h1>LightPay Privacy Policy</h1>
+        <p class="date">Effective Date: May 1, 2026</p>
+
+        <p class="intro">
+            LightPay is a self-custodial Web3 wallet application designed with privacy-first principles. 
+            Your private keys and personal data remain solely on your device.
+        </p>
+
+        <div class="card">
+            <h2>1. Information We Do Not Collect</h2>
+            <p>
+                We do not collect, store, or transmit your name, email, private keys, seed phrases, 
+                or transaction history. We do not sell, rent, or share user data.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>2. Local Storage</h2>
+            <p>
+                All wallet data and settings are securely stored in encrypted form on your Mac at 
+                <code>~/Library/Application Support/LightPay</code>.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>3. Security Commitment</h2>
+            <p>
+                LightPay prioritizes local encryption and secure storage practices to ensure 
+                your digital assets remain under your control.
+            </p>
+        </div>
+
+        <div class="contact">
+            <h2>4. Contact</h2>
+            <p>
+                Email: <a href="mailto:adeolawunmi857@gmail.com">adeolawunmi857@gmail.com</a>
+            </p>
+        </div>
+    </div>
 </body>
 </html>
